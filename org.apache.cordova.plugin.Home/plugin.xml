@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.plugin.Home"
+    version="0.3.3">
+
+    <name>Home</name>
+    <!--<description>Cordova Vibration Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,vibration</keywords>-->
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Home">
+                <param name="android-package" value="org.apache.cordova.plugin.Home.Home"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/Home.java" target-dir="src/org/apache/cordova/plugin/Home" />
+
+        <!--<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.VIBRATE"/>
+        </config-file>-->
+    </platform>
+</plugin>
